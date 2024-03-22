@@ -14,6 +14,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common RisingOS stuff.
 $(call inherit-product, vendor/rising/config/rising.mk)
 
+# QTI Framework boost
+TARGET_SUPPORTS_FRAMEWORK_BOOST := true
+
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
