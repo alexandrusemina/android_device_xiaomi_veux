@@ -8,4 +8,4 @@ echo "Cloning MiCam"
 git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_xiaomi_miuicamera-veux vendor/xiaomi/miuicamera-veux
 
 echo "Cloning hardware related stuff..."
-git clone https://github.com/PixelExperience/hardware_xiaomi hardware/xiaomi
+git clone https://github.com/crdroidandroid/android_hardware_xiaomi.git hardware/xiaomi
