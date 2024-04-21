@@ -6,7 +6,7 @@ echo "Cloning Vendor..."
 git clone https://github.com/alexandrusemina/vendor_xiaomi_veux.git vendor/xiaomi/veux
 
 echo "Cloning MiCam"
-git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_xiaomi_miuicamera-veux vendor/xiaomi/miuicamera-veux
+git clone https://github.com/AswinOP/vendor_xiaomi_miuicamera-veux vendor/xiaomi/miuicamera-veux
 
 echo "Cloning hardware related stuff..."
 git clone https://github.com/crdroidandroid/android_hardware_xiaomi.git hardware/xiaomi
