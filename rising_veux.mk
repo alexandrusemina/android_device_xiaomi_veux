@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common RisingOS stuff.
+$(call inherit-product, vendor/rising/config/rising.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -22,7 +22,7 @@ PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2201116SG
-PRODUCT_NAME := derp_veux
+PRODUCT_NAME := rising_veux
 PRODUCT_SYSTEM_NAME := veux_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -32,3 +32,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 BUILD_FINGERPRINT := Redmi/veux_global/veux:13/TKQ1.221114.001/V14.0.6.0.TKCMIXM:user/release-keys
+
+#RisingOS
+RISING_CHIPSET := "Snapdragon695"
+RISING_MAINTAINER := "semialex16"
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
