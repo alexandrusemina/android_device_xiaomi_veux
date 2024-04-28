@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_veux.mk
+    $(LOCAL_DIR)/lineage_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_veux-user \
-    rising_veux-userdebug \
-    rising_veux-eng
+    lineage_veux-user \
+    lineage_veux-userdebug \
+    lineage_veux-eng
