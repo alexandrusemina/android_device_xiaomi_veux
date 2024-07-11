@@ -63,6 +63,9 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.holi:32
 
+PRODUCT_PACKAGES += \
+    libaudioroute.vendor
+
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 AUDIO_SKU_DIR := sku_holi
 
@@ -99,6 +102,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    liblz4.vendor
 
 PRODUCT_PACKAGES += \
     libpiex_shim
@@ -358,6 +364,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+PRODUCT_PACKAGES += \
+    libssl.vendor
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
@@ -372,6 +381,11 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     librmnetctl
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
@@ -473,6 +487,9 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor \
     vendor.qti.hardware.display.config-V5-ndk
+
+PRODUCT_PACKAGES += \
+    libpng.vendor
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
